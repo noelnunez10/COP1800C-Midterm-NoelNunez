@@ -48,3 +48,18 @@ The test cases and results are documented in docs/test-log.md.
 
 Evidence:
 A screenshot of the program output is saved in docs/evidence/Exercise1JavaMidterm.png.
+
+## Exercise 2: Attendance Analyzer
+
+This exercise uses a 2D array to store the number of visits in three study rooms during four periods.
+
+The program calculates the total visits for each room and period, the grand total, the average visits per cell, the room with the highest attendance, and the number of busy rooms.
+
+It also includes a menu that allows the user to view the summary, search for a room, or exit the program. Invalid inputs are handled without stopping the program.
+
+
+### Testing
+
+The program was tested with the original matrix, invalid menu and room inputs, a tie between rooms, and a matrix containing only zeros.
+
+All 11 tests passed. The results are documented in docs/test-log.md, and a screenshot is saved in docs/evidence/Exercise2JavaMidterm.png.
