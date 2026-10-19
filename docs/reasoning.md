@@ -67,3 +67,36 @@ Both methods have the same name, but different parameters. The reserve(int seats
 ### E3-R3: What happens when an alias makes a reservation?
 
 An alias is another reference to the same object. It does not create a new room. If we reserve a seat using the alias, the original reference also shows the updated number of reserved seats because both references point to the same object.
+
+### Exercise 4 — Plan
+
+1. Reuse the StudyRoom class from Exercise 3 to manage reservations, cancellations, and room capacity.
+2. Create a Priced interface with the feePerSeat() method.
+3. Create an abstract class called CampusResource that extends StudyRoom and implements Priced.
+4. Add methods in CampusResource to calculate revenue and occupancy.
+5. Create two subclasses: StudySpace with a fee of 3 per seat and ComputerLab with a fee of 8 per seat.
+6. Create a CampusResource array with three resources: Quiet Study, Computer Lab, and Group Study.
+7. Use a while loop and a switch statement to create a menu for reservations, cancellations, reports, and exiting.
+8. Validate resource numbers, seat quantities, and user input to prevent invalid operations.
+9. Use StringBuilder to display a report with reserved seats, remaining seats, revenue, occupancy, and total revenue.
+10. Test the program with the required cases and additional invalid inputs to confirm that everything works correctly.
+
+### Exercise 4 — Reasoning Challenges
+
+### Exercise 4 — Reasoning Challenges
+
+**E4-R1: Why can CampusResource return two different fees? What is the difference between overriding and overloading?**
+
+A CampusResource can refer to a StudySpace (fee 3) or a ComputerLab (fee 8). Overriding means using the same method with different results in different classes. 
+
+**E4-R2: What is the difference between CampusResource and Priced?**
+
+Priced requires resources to have a feePerSeat() method. CampusResource uses this fee to calculate revenue and also calculates occupancy.
+
+**E4-R3: How does cancellation affect revenue?**
+
+Canceling seats lowers the number of reserved seats, so revenue decreases. 
+
+**E4-R4: Why should the resource array be created outside the menu loop?**
+
+If we create the resources inside the loop, they reset every time the menu appears. Keeping them outside the loop saves the reservations until the program ends.

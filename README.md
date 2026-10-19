@@ -76,3 +76,37 @@ The program allows users to reserve and cancel seats while making sure the numbe
 ### Testing
 
 The results are documented in docs/test-log.md, and the screenshot is saved in docs/evidence/Exercise3JavaMidterm.png.
+
+
+## Exercise 4 — Campus Resource Manager
+
+This exercise is a Java program that manages reservations for campus study spaces and computer labs.
+
+The program uses inheritance, an interface, an abstract class, and an array to manage different resources.
+
+### Features
+
+- Reserve and cancel seats.
+- Check available seats for each resource.
+- Prevent invalid reservations and cancellations.
+- Calculate revenue based on reserved seats.
+- Calculate occupancy percentages.
+- Display a report for all resources.
+- Handle invalid menu options and non-numeric inputs.
+
+### Resources
+
+| Resource | Capacity | Fee per Seat |
+|---|---:|---:|
+| Quiet Study | 4 | 3 |
+| Computer Lab | 3 | 8 |
+| Group Study | 2 | 3 |
+
+
+### Testing
+
+The final report showed a total revenue of 17.00, with occupancy values of 25.0%, 33.3%, and 100.0%.
+
+Test results are documented in docs/test-log.md, and the program design and reasoning answers are in docs/reasoning.md.
+
+A screenshot of the final report is saved in exercise4/evidence/exercise4-report.png.

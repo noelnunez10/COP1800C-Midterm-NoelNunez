@@ -59,3 +59,32 @@ Capacity: 6
 
 ### Test Summary
 All 8 sequential operations passed. The 4 invalid constructor checks produced the expected rejection messages. The default constructor and full cancellation also worked correctly.
+
+## Exercise 4 — Campus Resource Manager
+
+### Test Results
+
+The program was tested with nine required tests and six additional tests. All nine required tests were completed in one continuous run.
+
+| Test | Action | Expected Result | Status |
+|---|---|---|---|
+| A | Reserve 2 seats in Quiet Study | Success: true, Reserved: 2 | Passed |
+| B | Reserve 3 more seats in Quiet Study | Success: false, Reserved: 2 | Passed |
+| C | Reserve 1 seat in Computer Lab | Success: true, Reserved: 1 | Passed |
+| D | Cancel 1 seat in Quiet Study | Success: true, Reserved: 1 | Passed |
+| E | Reserve 2 seats in Group Study | Success: true, Reserved: 2 | Passed |
+| F | Cancel 2 seats in Computer Lab | Success: false, Reserved: 1 | Passed |
+| G | Select resource number 4 | Invalid resource number | Passed |
+| H | Reserve 0 seats in Quiet Study | Success: false, Reserved: 1 | Passed |
+| I | Display the final report | Total revenue: 17.00 | Passed |
+| Extra 1 | Reserve -1 seats | Success: false, Reserved: 0 | Passed |
+| Extra 2 | Select resource number 0 | Invalid resource number | Passed |
+| Extra 3 | Enter `abc` in the menu | Invalid input message | Passed |
+| Extra 4 | Enter `abc` as seat quantity | Invalid input message | Passed |
+| Extra 5 | Enter menu option 9 | Invalid option message | Passed |
+| Extra 6 | Reserve exactly 4 seats in Quiet Study after restarting | Success: true, Reserved: 4 | Passed |
+
+
+### Conclusion
+
+All 15 tests passed successfully. The program correctly handles reservations, cancellations, invalid inputs, revenue calculations, and occupancy percentages.
