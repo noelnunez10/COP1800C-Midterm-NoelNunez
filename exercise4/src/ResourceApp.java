@@ -129,7 +129,7 @@ public class ResourceApp {
         int totalRevenue = 0;
 
         // Agrego el titulo al reporte.
-        report.append(" CAMPUS RESOURCE REPORT ");
+        report.append("\nCAMPUS RESOURCE REPORT ");
 
         // Recorro todos los recursos.
         for (int i = 0; i < resources.length; i++) {

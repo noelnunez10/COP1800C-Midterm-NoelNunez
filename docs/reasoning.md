@@ -100,3 +100,11 @@ Canceling seats lowers the number of reserved seats, so revenue decreases.
 **E4-R4: Why should the resource array be created outside the menu loop?**
 
 If we create the resources inside the loop, they reset every time the menu appears. Keeping them outside the loop saves the reservations until the program ends.
+
+### Exercise 4 — Debugging Explanation
+
+Bug: The report title and the first resource appeared on the same line.
+
+Cause:The report needed an extra line break after its title.
+
+Test: I selected option 3 to display the report and noticed the formatting problem. After correcting the line break, I ran the report again to check that the title and resources appeared on separate lines.
