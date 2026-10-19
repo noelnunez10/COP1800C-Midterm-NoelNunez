@@ -51,7 +51,7 @@ A screenshot of the program output is saved in docs/evidence/Exercise1JavaMidter
 
 ## Exercise 2: Attendance Analyzer
 
-This exercise uses a 2D array to store the number of visits in three study rooms during four periods.
+This exercise uses an array to store the number of visits in three study rooms during four periods.
 
 The program calculates the total visits for each room and period, the grand total, the average visits per cell, the room with the highest attendance, and the number of busy rooms.
 
@@ -63,3 +63,16 @@ It also includes a menu that allows the user to view the summary, search for a r
 The program was tested with the original matrix, invalid menu and room inputs, a tie between rooms, and a matrix containing only zeros.
 
 All 11 tests passed. The results are documented in docs/test-log.md, and a screenshot is saved in docs/evidence/Exercise2JavaMidterm.png.
+
+## Exercise 3: StudyRoom
+
+This exercise uses Object-Oriented Programming to manage study room reservations.
+
+The StudyRoom class has private fields for the room title, capacity, and reserved seats. It uses constructors, getters, and overloaded methods to manage reservations safely.
+
+The program allows users to reserve and cancel seats while making sure the number of reserved seats never becomes negative or greater than the room capacity.
+
+
+### Testing
+
+The results are documented in docs/test-log.md, and the screenshot is saved in docs/evidence/Exercise3JavaMidterm.png.

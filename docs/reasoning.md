@@ -44,3 +44,26 @@ We subtract 1 from the room number because Java arrays start at index 0. For exa
 ### E2-R3: How does the comparison preserve the tie rule?
 
 I use > instead of >= when comparing room totals. If two rooms have the same total, the program keeps the first room. This makes sure the room with the lowest number wins the tie.
+
+## Exercise 3: StudyRoom
+
+### Plan
+
+1. Create a StudyRoom class with private fields for title, capacity, and reserved seats.
+2. Validate the title and capacity in the constructor.
+3. Create a second constructor with a default capacity of 4.
+4. Add getter methods to check the room information.
+5. Create reserve and cancel methods that check requests before changing reserved seats.
+6. Create StudyRoomDemo to test reservations, cancellations, constructors, and object references.
+
+### E3-R1: Why can changing state before validation violate the invariant?
+
+If we change the reserved seats before checking the request, the number of reservations could become negative or greater than the capacity. This would break the rule that reserved seats must always be between zero and the room capacity. We validate first to prevent this problem.
+
+### E3-R2: How are the two reserve methods an example of overloading?
+
+Both methods have the same name, but different parameters. The reserve(int seats) method reserves a specific number of seats, while reserve() calls reserve(1) to reserve one seat. 
+
+### E3-R3: What happens when an alias makes a reservation?
+
+An alias is another reference to the same object. It does not create a new room. If we reserve a seat using the alias, the original reference also shows the updated number of reserved seats because both references point to the same object.

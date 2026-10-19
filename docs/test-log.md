@@ -34,3 +34,28 @@
 ### Test Summary
 
 All 11 tests passed successfully. The program correctly calculates room and period totals, handles invalid inputs, follows the tie rule, and works with a zero-filled matrix.
+
+## Exercise 3: StudyRoom — Test Log
+
+Room: Quiet Room  
+Capacity: 6
+
+| Test | Input / Operation | Expected Result | Actual Result | Status |
+|---|---|---|---|---|
+| E3-T1 | reserve(4) | true, Reserved: 4, Remaining: 2 | true, Reserved: 4, Remaining: 2 | Passed |
+| E3-T2 | reserve(3) | false, Reserved: 4, Remaining: 2 | false, Reserved: 4, Remaining: 2 | Passed |
+| E3-T3 | cancel(2) | true, Reserved: 2, Remaining: 4 | true, Reserved: 2, Remaining: 4 | Passed |
+| E3-T4 | reserve() | true, Reserved: 3, Remaining: 3 | true, Reserved: 3, Remaining: 3 | Passed |
+| E3-T5 | reserve(3) | true, Reserved: 6, Remaining: 0 | true, Reserved: 6, Remaining: 0 | Passed |
+| E3-T6 | cancel(7) | false, Reserved: 6, Remaining: 0 | false, Reserved: 6, Remaining: 0 | Passed |
+| E3-T7 | reserve(0) | false, Reserved: 6, Remaining: 0 | false, Reserved: 6, Remaining: 0 | Passed |
+| E3-T8 | cancel(-1) | false, Reserved: 6, Remaining: 0 | false, Reserved: 6, Remaining: 0 | Passed |
+| E3-T9 | Null title | Constructor rejected | Null title rejected. | Passed |
+| E3-T10 | Spaces-only title | Constructor rejected | Blank title rejected. | Passed |
+| E3-T11 | Zero capacity | Constructor rejected | Zero capacity rejected. | Passed |
+| E3-T12 | Negative capacity | Constructor rejected | Negative capacity rejected. | Passed |
+| E3-T13 | Default constructor | Capacity: 4 | Capacity: 4 | Passed |
+| E3-T14 | Reserve 4, then cancel 4 | true, Reserved: 0, Remaining: 4 | true, Reserved: 0, Remaining: 4 | Passed |
+
+### Test Summary
+All 8 sequential operations passed. The 4 invalid constructor checks produced the expected rejection messages. The default constructor and full cancellation also worked correctly.
